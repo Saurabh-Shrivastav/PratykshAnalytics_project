@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+html,
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.row .left {
+    width: 64%;
+    height: 100%;
+}
+
+.left img {
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+}
+
+.hero {
+    margin-top: 2vw;
+}
+
+.hero img {
+    position: relative;
+    width: 90%;
+    opacity: .5;
+}
+
+.hero h1 {
+    position: absolute;
+    width: 30vw;
+    font-size: 2.5vw;
+    top: 18vw;
+    left: 17vw;
+    font-family: 'Merriweather', serif;
+}
+
+.header {
+    text-align: center;
+    margin-top: 4vw;
+}
+
+.headerbottom{
+    display: none;
+}
+
+.row .right {
+    width: 35%;
+    height: 100vh;
+    background-color: rgb(6, 6, 78);
+    border-radius: 50px 0 0 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14vw;
+    color: white;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm input::placeholder {
+    padding-left: 1vh;
+}
+
+
+.btn {
+    height: 5vh;
+    width: 5vw;
+    cursor: pointer;font-weight: 700;
+    transition: .5s;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(6, 6, 78);
+    color: white;
+    border: 2px solid white;
+}
+
+
+@media (max-width: 999px) {
+    .hero img, .header {
+        display: none;
+    }
+
+    .row .left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero h1 {
+        position: absolute;
+        width: 30vw;
+        top: 1vw;
+        font-weight: 800;
+        left: 40vw;
+        font-family: 'Merriweather', serif;
+    }
+
+    .headerbottom{
+        display: block;
+    }
+
+    .row .right {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vw;
+    }
+
+    .loginForm input {
+        width: 25vh;
+        height: 3vh;
+        border-radius: 5px;
+    }
+
+    .btn {
+        height: 5vh;
+        width: 10vh;
+        cursor: pointer;
+    }
+
+    .form{
+        margin-top: 4vw;
+    }
+}
+
+@media (max-width: 600px){
+    .hero h1{
+        top: 3vw;
+    }    
+}
+
+@media (max-width: 450px){
+    .hero h1{
+        top: 5vw;
+        font-size: .7rem;
+        width: 40%;
+    }
+}

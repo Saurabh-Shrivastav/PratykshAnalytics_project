@@ -1,0 +1,296 @@
+.logoutheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoutheader img{
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+}
+
+div .btn{
+    margin-right: 2vh;
+}
+
+.logoutarea{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.span{
+    line-height: 1;
+}
+
+/* Input boxes */
+.inputBoxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    background-color: rgb(6, 6, 78);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px gray;
+    padding: 7vh;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.topsec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomsec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown select{
+    width: 22vh;
+    height: 4vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+
+.dropdown p{
+    color: white;
+    margin-left: 10vh;
+}
+
+ input{
+    width: 28vh;
+    gap: 10px;
+    height: 4vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+input::placeholder{
+    padding: 6px;
+}
+
+.para {
+    /* margin-left: 165vh; */
+    color: white;
+}
+
+.para p{
+    position: absolute;
+    left: 72.8%;
+    bottom: 55%
+}
+
+.btns{
+     margin-top: 2%;
+}
+
+.btns .search{
+    height: 6vh;
+    width: 13vh;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btns .reset{
+    height: 6vh;
+    width: 13vh;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: gray;
+    border: transparent;
+    color: white;
+    font-weight: 700;
+}
+/* *********** */
+
+.total_record{
+    text-align: end;
+    padding: 0 10px;
+    line-height: 80%;
+}
+
+/* *************** */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 10px;
+    height: 80vh;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #dadada;
+    display: flex;
+    flex-direction: column;
+    line-height: 50%;
+}
+
+.leftSide h2{
+    margin-left: 10px;
+}
+
+.emty{
+    width: 80%;
+    height: .5vh;
+    background-color: black;
+}
+
+.country p{
+    width: 80%;
+    background-color: rgb(6, 6, 78);
+    margin-top: 2vh;
+    padding: 8px 4px;
+    color: white;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.country p{
+    margin-left: 5px;
+    font-size: larger;
+}
+
+
+.rightSide{
+    height: 80vh;
+    width: 78%;
+    border: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    aspect-ratio: 3/1;
+    border-radius: 5px 0 5px 0;
+}
+
+.rightSide::-webkit-scrollbar {
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    /* border: 1rem hidden #443c68; */
+    max-width: 80rem;
+}
+
+table tr{
+    padding: .45em;
+}
+
+thead tr{
+    background-color:  rgb(6, 6, 78);
+}
+
+thead td{
+    color: #fff;
+    font-size: 1.15em;
+}
+
+thead th{
+    color: white;
+    padding: 15px 21.2px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color:  rgb(6, 6, 78);
+}
+
+tbody tr:nth-child(even){
+    background-color: #eaeaea;
+}
+th,
+td{
+    border: 1px solid #443c68;
+}
+
+table th,
+table td{
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1137px){
+    .para p {
+        bottom: 48%;
+    }
+}
+
+@media (max-width: 844px){
+    .para p {
+        bottom: 42%;
+    }
+}
+@media (max-width: 824px){
+    .para p {
+        left: 64%;
+    }
+}
+@media (max-width: 614px){
+    .para p {
+        bottom: 36%;
+    }
+}
+@media (max-width: 500px){
+    .para p {
+        bottom: 30%;
+    }
+}
+@media (max-width: 404px){
+    .para p {
+        bottom: 0;
+        left: 60%;
+    }
+    .btns {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 948px){
+    .leftSide{
+        display: none;
+    }
+}
+
+@media (max-width: 485px){
+    .span{
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 300px){
+    .span{
+        font-size: .2rem;
+    }
+}
